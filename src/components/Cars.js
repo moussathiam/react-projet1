@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Car = ({children, color, year}) => {
-    const colorInfo = color ? (<p>Couleur : { color }</p>) : (<p>Couleur : Néan</p>);
+    const colorInfo = color ? (<td> { color }</td>) : (<td>Néan</td>);
     return(
-        <div style={{ backgroundColor: '#eee', width: '400px', padding: 5, margin: '5px auto' }}>
-            <p>Marque : { children }</p>
-            <p>Année : { year }</p>
-            { colorInfo }
-        </div>
+        <Fragment>
+            <tr>
+                <td>{ children }</td>
+                <td>{ year }</td>
+                { colorInfo }
+            </tr>
+        </Fragment>
     )
 }
 

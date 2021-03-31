@@ -1,0 +1,18 @@
+.App {
+    text-align: center;
+  }
+td, th
+{
+    border: 1px solid #aaa;
+    padding: 5px;
+    margin: 0px;
+} 
+th
+{
+    background-color: rgb(49, 50, 54);
+    color: white;
+}
+table
+{
+    border-collapse: collapse;
+}

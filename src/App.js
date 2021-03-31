@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import Mycars from './components/Mycars'
+import Mycars from './components/Mycars';
+import Form from './components/Form';
 
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
   render(){
     return(
       <div className="App">
-        <Mycars titre={ this.state.titre }/>
+        <Form titre={ this.state.titre }/>
       </div>
     )
   }
