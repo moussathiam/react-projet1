@@ -17,3 +17,7 @@ h1.styled
   color: red;
   text-transform: uppercase;
 }
+.border2
+{
+  border: 1px solid red;
+}

@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react';
 
-const ImgCar = () => {
+const ImgCar = (props) => {
     return (
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="200" height="200" viewBox="0 0 1280.000000 640.000000"
-            preserveAspectRatio="xMidYMid meet">
+            preserveAspectRatio="xMidYMid meet"  style={{ backgroundColor:props.fond }}>
             <metadata>
                 Created by potrace 1.15, written by Peter Selinger 2001-2017
             </metadata>
-            <g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)" fill="red" stroke="none">
+            <g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)" fill={props.color} stroke="none">
                 <path d="M7390 6279 c-1178 -49 -2139 -331 -2955 -866 -318 -210 -555 -408
                 -996 -836 -333 -323 -453 -431 -534 -478 -130 -76 -460 -156 -1005 -243 -382
                 -61 -544 -108 -785 -226 -386 -189 -659 -437 -893 -814 -197 -315 -247 -517
